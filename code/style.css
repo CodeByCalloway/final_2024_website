@@ -1,0 +1,23 @@
+body {
+    color: #06141B;
+    background-color: #9BA8AB;
+}
+nav {
+    font-size: 25px;
+    float: left;
+    width: 30%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+header {
+    background-color: #4A5C6A;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+  }
+  

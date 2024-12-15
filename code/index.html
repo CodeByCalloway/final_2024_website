@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Oceanic Whitetip Sharks</title>
 </head>
 <body>
     <header>
         <h2 class="header">Oceanic whitetip sharks</h2>
     </header>
-    <!--Side panel-->
-    <section>
-        <nav>
-            <ul>
-                <li><a href="can_do.html">What you can do for Oceanic whitetip shark</a></li>
-                <li><a href="diet.html">Diet of Oceanic whitetip shark</a></li>
-                <li><a href="gen.html">General information of Oceanic whitetip shark</a></li>
-            </ul>
-        </nav>
-        <article>
+        <!--Side panel-->
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:viod(0)" class="closebtn" onclick="closeNav()">X</a>
+            <a href="can_do.html">What you can do for Oceanic whitetip shark</a>
+            <a href="diet.html">Diet of Oceanic whitetip shark</a>
+            <a href="gen.html">General information of Oceanic whitetip shark</a>
+        </div>
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">
+                ☰ Open Sidebar
+            </button>
             <h1>Oceanic Whitetip Sharks</h1>
             <p>The oceanic whitetip shark (Carcharhinus longimanus) is a large pelagic requiem shark inhabiting tropical and warm temperate seas. It has a stocky body with long, white-tipped, rounded fins. The species is typically solitary, though they may gather in large numbers at food concentrations. Bony fish and cephalopods are the main components of its diet and females give live birth.
             </p>
             <p>Though slow-moving, the shark is opportunistic and aggressive, and is reputed to be dangerous to shipwreck survivors. The IUCN Red List considers the species to be critically endangered. Recent studies show steeply declining populations as they are harvested for their fins and meat. As with other shark species, the whitetip faces mounting fishing pressure throughout its range.</p>
-          </article>
-    </section>
-</body>
+        </div>
+        <script>
+            function openNav() {
+              document.getElementById("mySidebar").style.width = "250px";
+              document.getElementById("main").style.marginLeft = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidebar").style.width = "0";
+              document.getElementById("main").style.marginLeft= "0";
+            }
+            </script>
+        </body>
 </html>

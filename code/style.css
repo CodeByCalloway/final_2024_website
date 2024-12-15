@@ -10,7 +10,27 @@ header {
   }
 p {
     font-size: 30px;
-    text-align: center;   
+    text-align: left;   
+}
+h1 {
+  text-align: center;
+}
+.footnote {
+  font-size: medium;
+}
+#Oceanic_whitetip_shark_at_Elphinstone_Reef{
+  width: 500px;
+  height:500px;
+  border-style: double;
+  border-radius: 15px;
+}
+#footnote-image-right {
+  float: right;
+  margin-right: 10px;
+}
+#footnote-image-left {
+  float: left;
+  margin-right: 10px;
 }
 .sidebar {
         height: 100%;
